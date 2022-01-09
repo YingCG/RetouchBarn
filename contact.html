@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Before &lt; | &gt; After Slider</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="index">
+        <header>
+            <div class="logo">
+                <a title="Retouch Barn" href="Index.html">
+                    <img src ="assets/RetouchBarnLogo.png" alt="Retouch Barn Logo">
+                </a>
+            </div>
+            <nav>
+                <div class="dropdown">
+                    <div>
+                        <a href ="portfolio.html"><button class="dropbtn">Portfolio</button></a>
+                            <div class="dropdown-content">
+                                <a title="STILL" href ="Still.html">STILL</a>
+                                <a title="BEAUTY" href ="BEAUTY">BEAUTY</a>
+                                <a title="FASHION" href ="FASHION">FASHION</a>
+                                <a title="POTRAIT" href ="POTRAIT">POTRAIT</a>
+                                <a title="ADVERTISING" href ="ADVERTISING">ADVERTISING</a>
+                                <a title="PUBLISHED" href ="PUBLISHED">PUBLISHED</a>
+                                <a title="PORTFOLIO" href ="portfolio.html">ALL</a>
+                            </div>
+
+                        <a href ="contact.html"><button class="dropbtn">Contact</button></a>
+                            <div class="dropdown-content"></div>
+                </div>
+            </nav>
+        </header>
+    </div>    
+    <div class="section-panel-split">
+		<div class="panel-split__content">
+			<div class="container-contact-form">
+                <h3>Are you ready for  the digital future? </h3>
+                <p>Take some pride in the way that your products look to capture the right audience.</p>
+                <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                    <div className="form-group">
+                        <label htmlFor="name">Name</label>
+                        <input type="text" className="form-control" />
+                    </div><br>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputEmail1">Email address</label>
+                        <input type="email" className="form-control" aria-describedby="emailHelp" />
+                    </div><br>
+                    <div className="form-group">
+                        <label htmlFor="message">Message</label>
+                        <textarea className="form-control" rows="5"></textarea>
+                    </div>
+                    <div id="root"></div>
+
+                    <!-- <button type="email" className="btn btn-primary">Email Me</button> -->
+                </form>
+
+
+            </div>
+        </div>
+
+        <div class="panel-split__content">
+            <div class="IntroPic">
+                <p><h4>Welcome to my site.</h4>
+                    
+                    Hello, I'm CJ. I have been a Senior Retoucher/Finishing Artist in the imaging industry since 1997.
+                    Currently residing in Hudson Valley, I work my artistry for the industry in New York City and beyond, freelancing out of my home from my own small retouching boutique, The Retouch Barn.
+                    I employ non-destructive retouching and a color-calibrated environment for critical color work.   Proper masking, curves, and dodge & burn are my daily alpha and omega.   The result is clean and detailed layers, elegantly organized and easily reviewed by the client.
+                    Thank you for considering me to be part of your creative process.  I enjoy taking an artist’s vision and turning it into reality.
+                    
+                </p>  
+                <p>
+                    Let us work together!<br>
+                    <a href="tel:( 917 ) 743 - 7115">( 917 ) 743 - 7115</a></br>
+                    <a href="mailto:cjlee@retouchbarn.com">cjlee@retouchbarn.com</a></br>
+                    <a href="mailto:cjleephoto@yahoo.com">cjleephoto@yahoo.com </a>
+                </p>    
+            </div>
+		</div>
+	</div>
+
+</body>
+<script type="text/babel">
+
+    class EmailButton extends React.Component {
+    thankYouMessage(){
+        alert("Thank you for getting in touch!");
+    }    
+      render() {
+        return  <button onClick ={this.thankYouMessage}>Message Me</button>;
+      }
+    }
+    function App(){
+        return (<div><EmailButton/></div>)
+    }
+      
+    ReactDOM.render((<App/>), document.getElementById('root'));
+    </script>
+</html>

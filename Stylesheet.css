@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Open Sans', san-serif; 
+    font-size: 16px; 
+    font-weight:300; 
+    color:black;
+    margin:0;
+    padding:0;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+  
+/*header */
+header {
+    margin: 15px 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width:300px;
+    padding: 10px;
+}
+
+
+/* nav*/
+nav {
+    flex-direction: row;
+    padding: 10px;
+}
+nav a{
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover{ 
+    background-color:  #7e7b7b;
+}
+.dropbtn{
+    background-color: #f1f1f1;
+    font-size: 16px;
+    width: max-content;
+} 
+
+  /* Style the buttons */
+  .btn {
+    font-family: Inconsolata;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    color: #555555;
+    margin-bottom: 3em;
+
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    color:#BD4A18;
+
+  }
+  
+/*Portlio dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover{
+    background-color:  #f1f1f1; 
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: #555555;
+    padding: 12px 16px;
+    font-family: inherit;
+    margin: 0;
+}
+.contact {
+    position: relative;
+    display: inline-block;
+}
+button.dropbtn:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.contact:hover{
+    background-color:  #f1f1f1; 
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+.dropdown-content a:hover {
+    background-color: #BD4A18;
+    color: #f1f1f1;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hero */
+
+.hero {
+    max-width: 100%;
+    background-image: url('assets/TopBanner_Desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* mobile */
+@media screen and (max-width: 480px){
+    .nav {
+        padding: 0px;
+    }
+    .hero{
+        width: 100%;
+        background-image: url('assets/TopBanner_Sml.jpg');
+        height: 240px;
+        background-position: center;
+        background-size: contain;
+    }
+}
+/* tablet */
+@media screen and (min-width: 431px){
+    .hero{
+        background-image: url('assets/TopBanner_Sml.jpg');
+        height: 350px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .hero{
+        height: 500px;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1024px){
+    .hero{
+        height: 600px;
+    }
+}
+
+/* Extra Large */
+@media screen and (min-width: 1300px){
+    .hero{
+        background-image: url('assets/TopBanner_ExtraLarge.jpg');
+        height: 700px;
+    }
+}
+
+/* service */
+.service{
+    display: flex;
+    margin: 10px;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    height: auto;
+    text-align: left;
+    position: relative;
+    justify-content: center;
+}
+
+
+ul {
+    padding-inline-start: 10px;
+    margin-block-start: 0px;
+    margin-block-end: 2px;
+}
+
+@media only screen and (max-width: 480px) {
+    .service {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+    .icon{
+        width: 100%;
+        padding: 2px;
+        padding-left: 15px;
+        flex-direction: row ;
+        justify-content: left;
+    }
+
+    .icon img{
+        width: 35px;
+    }
+  }
+    .serviceDes {
+        padding-left: 10px;
+    }
+
+@media screen and (min-width: 768px){
+    .icon {
+        width: 50%;
+    }
+    .serviceDes {
+        padding-left: 2px;
+    }
+
+}
+
+/* Responsive Gallery*/
+div.Gallery {
+    padding-bottom: 15px;
+}
+
+div.Gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding-bottom: 5px;
+    text-align: center;
+    color:#555555;
+    font-weight: bolder;
+}
+ 
+.Responsive {
+    padding: 0px 0px;
+    float: left;
+    width: 33.33%;
+}
+
+@media screen and (max-width: 768px){
+    .Responsive{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .Responsive{
+        width: 100%;
+    }
+}
+
+.Responsive-container {
+    overflow: auto;
+}
+  
+
+/* footer */
+footer {
+    font-size: 14px;
+    color: #BD4A18;
+}
+
+.footer-container{
+    margin-top: 25px;
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 90%, 70.5rem;
+    color: #BD4A18;
+    display: flex;
+}
+@media screen and (max-width: 480px){
+    .footer-container{
+        display: block;
+       }
+}
+
+.contact-icon {
+    position: relative;
+    color: #BD4A18;
+}
+.contact-info {
+    flex: 1;
+}
+
+.contact-info a{
+    color: #BD4A18;
+}
+
+.retouchbarn {
+    flex: 2;
+}
+
+.copyright {
+    margin-top:25px;
+    margin-bottom: 25px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+}
+
+@media screen and (max-width: 480px){
+    header{
+        display: block;
+        justify-content: space-between;
+}
+    nav{
+        width: 100%;
+    }
+    .dropbtn{
+        width: 49%;
+        justify-content: space-between;
+    }
+
+}
+
+/* --- Portfolio Page --- */
+
+  /* Center website */
+  .main {
+    max-width: 100%;
+    margin: 0px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 0px;
+  }
+  
+ 
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 0px;
+    gap: 0px;
+
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    width: 100%;
+    height: auto;
+    display: none; 
+    
+    /* Hide columns by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  
+  /* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+  }
+
+.Portfolio_filter{
+    text-align: center;
+}
+
+
+.pageTitle{
+    font-size: 50px;
+    font-weight: 100;
+    height: 65px;
+}
+@media screen and (max-width: 431px){
+    .Portfolio_filter .btn{
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+    } 
+}
+.section-panel-split{
+    outline: #aaa;
+}
+
+/* ---- Style for still life ---- */
+
+  /* Position the image container (needed to position the left and right arrows) */
+
+  .Slide_container {
+    align-items: center;
+    background-color: black;
+    height: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+   
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color:#BD4A18
+  }
+  
+  
+  /* Six columns side by side */
+  .slide_column {
+    float: left;
+    width: 16.65%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .slide_column{
+    opacity: 0.6;
+  }
+  
+  .active,
+  .slide_column:hover {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 600px){
+.mySlide{
+    height: 320px;
+}
+.slide_row{ 
+    display: none;
+    }
+  }
+
+
+  /* ---- Style for Contact page ---- */
+.section-panel-split{
+    display: flex;
+}
+
+.panel-split__content{
+    width: 50%;
+    margin: 0px;
+    display: block;
+    height: 700px;
+    background-color:#f1f1f1;
+}
+
+  .container-contact-form{
+    flex: 1;
+    padding: 25px 25px 0 25px;
+}
+
+.form-control{
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+  }
+
+.IntroPic{
+    background-image: url('assets/DkXsn2mB5WJiX-kSLgXz_SelfSabotage.jpg');
+    background-size: cover;
+    flex: 1;
+    padding: 25px 45px 25px 45px;
+    height: 100%;
+    color: white;
+    font-size: 13px;
+}
+input{
+    width:100%;
+    height: 40px;
+    border: none;
+}
+textarea{
+    width:100%;
+    height: 300px;
+    border: none;
+}
+.IntroPic a{
+    color: white;
+    font-weight:300;
+    font-size: 12px;
+}

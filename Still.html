@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Retouch Barn</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Stylesheet.css">
+
+</head>
+
+<body>
+    <div id="index">
+        <header>
+            <div class="logo">
+                <a title="Retouch Barn" href="Index.html">
+                    <img src ="assets/RetouchBarnLogo.png" alt="Retouch Barn Logo">
+                </a>
+            </div>
+
+            <nav>
+                <div class="dropdown">
+                    <div>
+                        <a href ="portfolio.html"><button class="dropbtn">Portfolio</button></a>
+                            <div class="dropdown-content">
+                                <a title="STILL" href ="Still.html">STILL</a>
+                                <a title="BEAUTY" href ="BEAUTY">BEAUTY</a>
+                                <a title="FASHION" href ="FASHION">FASHION</a>
+                                <a title="POTRAIT" href ="POTRAIT">POTRAIT</a>
+                                <a title="ADVERTISING" href ="ADVERTISING">ADVERTISING</a>
+                                <a title="PUBLISHED" href ="PUBLISHED">PUBLISHED</a>
+                                <a title="PORTFOLIO" href ="portfolio.html">ALL</a>
+                            </div>
+
+                        <a href ="contact.html"><button class="dropbtn">Contact</button></a>
+                            <div class="dropdown-content"></div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+       <!-- Container for the image gallery -->
+        <div class="Slide_container">
+
+            <div class="mySlides">
+                <img src="assets/DKNY Bottle insides Bottle.jpg" >
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/Visnja Power Ring2.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/Korin Plate Blue Plate.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/Jacob Gold Watch.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/Korin Knife 001.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/Korin Plate Brown Green Plate.jpg" >
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        </div>
+        
+   <!-- Thumbnail images -->
+        <div class="slide_row">
+              <div class="slide_column">
+                <img class="slide cursor" src="assets/DKNY Bottle insides Bottle.jpg" style="width:100%" onclick="currentSlide(1)" alt="DNKY Bottle insides Bottle">
+              </div>
+              <div class="slide_column"> 
+                <img class="slide cursor" src="assets/Visnja Power Ring2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Vinsnja Power Ring">
+              </div>
+              <div class="slide_column">
+                <img class="slide cursor" src="assets/Korin Plate Blue Plate.jpg" style="width:100%" onclick="currentSlide(3)" alt="DKNY Purple City">
+              </div>
+              <div class="slide_column">
+                <img class="slide cursor" src="assets/Jacob Gold Watch.jpg" style="width:100%" onclick="currentSlide(4)" alt="Jacob Gold Watch">
+              </div>
+              <div class="slide_column">
+                <img class="slide cursor" src="assets/Korin Knife 001.jpg" style="width:100%" onclick="currentSlide(5)" alt="NKorin Knife">
+              </div> 
+              <div class="slide_column">
+                <img class="slide cursor" src="assets/Korin Plate Brown Green Plate.jpg" style="width:100%" onclick="currentSlide(6)" alt="Korin Plate">
+              </div>
+        </div>
+</main>
+
+    
+    <footer>          
+        <div>
+            <p class="copyright"> Retouch Barn © 2021 </p>
+        </div>
+    </footer>
+<script src="gallery.js"></script>
+
+</body>
+</html>

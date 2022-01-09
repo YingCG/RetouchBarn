@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Retouch Barn</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Stylesheet.css">
+
+</head>
+
+<body>
+    <div id="index">
+        <header>
+            <div class="logo">
+                <a title="Retouch Barn" href="Index.html">
+                    <img src ="assets/RetouchBarnLogo.png" alt="Retouch Barn Logo">
+                </a>
+            </div>
+
+            <nav>
+              <div class="dropdown">
+                  <div>
+                      <a href ="portfolio.html"><button class="dropbtn">Portfolio</button></a>
+                          <div class="dropdown-content">
+                              <a title="STILL" href ="Still.html">STILL</a>
+                              <a title="BEAUTY" href ="BEAUTY">BEAUTY</a>
+                              <a title="FASHION" href ="FASHION">FASHION</a>
+                              <a title="POTRAIT" href ="POTRAIT">POTRAIT</a>
+                              <a title="ADVERTISING" href ="ADVERTISING">ADVERTISING</a>
+                              <a title="PUBLISHED" href ="PUBLISHED">PUBLISHED</a>
+                              <a title="PORTFOLIO" href ="portfolio.html">ALL</a>
+                          </div>
+
+                      <a href ="contact.html"><button class="dropbtn">Contact</button></a>
+                          <div class="dropdown-content"></div>
+              </div>
+          </nav>
+        </header>
+
+        <main>
+          <div class="Portfolio_filter">
+            <span class="pageTitle">PORTFOLIO</span>
+
+            <div id="portfolioCategories">
+              <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
+              <span>/</span>
+              <button class="btn" onclick="filterSelection('still')"> STILL</button>
+              <span>/</span>
+              <button class="btn" onclick="filterSelection('beauty')"> BEAUTY</button>
+              <span>/</span>
+              <button class="btn" onclick="filterSelection('fashion')"> FASHION</button>
+              <span>/</span>
+              <button class="btn" onclick="filterSelection('potrait')"> POTRAIT</button>
+              <span>/</span>
+              <button class="btn" onclick="filterSelection('advertising')"> ADVERTISING</button>
+              <span>/</span>
+              <button class="btn" onclick="filterSelection('published')"> PUBLISHED</button>
+            </div>
+            
+        </div>
+        <!-- Portfolio Gallery Grid -->
+        <div>
+          
+        <div class="row">
+          <div class="Responsive">
+            <div class="Gallery">
+          <div class="column published">
+            <div class="content">
+              <img src="assets/BananaCar.jpeg" alt="published" style="width:100%">
+            </div>
+          </div>
+          </div>
+          </div>
+
+          <div class="Responsive">
+            <div class="Gallery">
+              <div class="column still">
+            <div class="content">
+              <img src="assets/307474b684eab923066ffe6849a053ad.jpeg" alt="still" style="width:100%">
+            </div>
+          </div>
+          </div>
+          </div>
+          
+          <div class="Responsive">
+            <div class="Gallery">
+              <div class="column fashion">
+            <div class="content">
+              <img src="assets/UW 3223_Kristina.jpg" alt="fashion" style="width:100%">
+            </div>
+          </div>
+          </div></div>
+        
+          <div class="Responsive">
+            <div class="Gallery"><div class="column still">
+            <div class="content">
+              <img src="assets/FlorentTanet01.jpeg" alt="still" style="width:100%">
+            </div>
+          </div>
+</div></div>
+          
+<div class="Responsive">
+  <div class="Gallery">
+    <div class="column beauty">
+            <div class="content">
+              <img src="assets/UW 3222_Lolita.jpg" alt="beauty" style="width:100%">
+            </div>
+          </div>
+</div></div>
+
+<div class="Responsive">
+  <div class="Gallery">
+     <div class="column advertising">
+            <div class="content">
+              <img src="assets/gknq03myqzmym2qa55uw.png" alt="advertising" style="width:100%">
+            </div>
+          </div>
+          </div></div>
+
+          <div class="Responsive">
+            <div class="Gallery">
+          <div class="column beauty">
+            <div class="content">
+              <img src="assets/interview-rob-woodcox-photography-designboom-05.jpg" alt="beauty" style="width:100%">
+            </div>
+          </div>
+          </div></div>
+          
+          <div class="Responsive">
+            <div class="Gallery">
+          <div class="column published">
+            <div class="content">
+              <img src="assets/interview-rob-woodcox-photography-designboom-13X.jpg" alt="published" style="width:100%">
+            </div>
+          </div>
+          </div>
+          </div>
+
+          <div class="Responsive">
+            <div class="Gallery">
+              <div class="column potrait">
+            <div class="content">
+              <img src="assets/interview-rob-woodcox-photography-designboom-03.jpg" alt="potrait" style="width:100%">
+            </div>
+          </div>
+          </div></div>
+
+          <div class="Responsive">
+                <div class="Gallery">
+                  <div class="column still">
+            <div class="content">
+              <img src="assets/legHeel.jpeg" alt="still" style="width:100%">
+            </div>
+          </div>
+          </div></div>
+
+          <div class="Responsive">
+            <div class="Gallery">
+          <div class="column potrait">
+            <div class="content">
+              <img src="assets/Lara-Zankoul-The-Unseen-2013-cover.jpeg" alt="potrait" style="width:100%">
+            </div>
+          </div>
+          </div></div>
+
+          <div class="Responsive">
+                <div class="Gallery">
+                  <div class="column still">
+            <div class="content">
+              <img src="assets/197129642000202.png" alt="still" style="width:100%">
+            </div>
+          </div>
+          </div></div>
+          
+       
+</div>
+        
+</main>    
+    <footer>       
+        <div>
+            <p class="copyright"> Retouch Barn © 2021 </p>
+        </div>
+    </footer>
+
+<script src="filterselector.js"></script>
+</body>
+</html>
